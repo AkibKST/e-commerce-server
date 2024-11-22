@@ -12,7 +12,7 @@ const getAllProducts = async () => {
 };
 
 const getProductById = async (productId: any) => {
-  const result = await Product.find(productId);
+  const result = await Product.findById(productId);
   return result;
 };
 

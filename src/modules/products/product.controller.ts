@@ -5,6 +5,8 @@ import { ProductServices } from "./product.service";
 const createProduct = async (req: Request, res: Response) => {
   const productData = req.body;
 
+  // use zod parser
+
   const result = await ProductServices.createProduct(productData);
   res.json({
     success: true,
