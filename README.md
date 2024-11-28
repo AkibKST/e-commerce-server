@@ -1,14 +1,14 @@
 #--Git Clone  
-$git clone https://github.com/AkibKST/e-commerce-server.git
+git clone https://github.com/AkibKST/e-commerce-server.git
 
 #--Change your directory
 
-$cd e-commerce-server
+cd my project
 
 #--Install Node Package Manager
 
-$npm install
+npm install
 
 #--Run Server
 
-$npm run start:dev
+npm run start:dev
