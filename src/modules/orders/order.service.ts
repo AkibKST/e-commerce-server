@@ -36,6 +36,7 @@ const createOrder = async (order: TOrder) => {
 };
 
 const getOrders = async (email: string) => {
+  //eslint-disable-next-line
   const filter: any = {};
   if (email) {
     filter.email = email;

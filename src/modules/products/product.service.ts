@@ -7,6 +7,7 @@ const createProduct = async (payLoad: TProduct) => {
 };
 
 const getAllProducts = async (searchTerm?: string) => {
+  //eslint-disable-next-line
   const filterDoc: any = {};
 
   if (searchTerm) {
@@ -35,7 +36,7 @@ const updateProduct = async (productId: string, payLoad: TProduct) => {
   const updatedProduct = await Product.findByIdAndUpdate(productId, payLoad, {
     new: true,
   });
-  return updateProduct;
+  return updatedProduct;
 };
 
 export const ProductServices = {
